@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Register</title>
+	<script language ="JavaScript" src="MyJs/register.js" > </script>
+  </head>
+  <body>
+     <div class="card text-white bg-dark mb-6 align-items-center" style="max-width: 120rem;">
+  <div class="card-header">
+  	<h1 class="card-title text-center">Register Now</h1>
+  </div>
+  <div class="card-body ">
+	<div class="card text-white bg-secondary mb-3" style="max-width: 54rem;">
+  <div class="card-body">
+  <!-- Form -->
+    <form method="POST"  name="f" onsubmit="return verifRegister()" action="../../core/ajouterClient.php">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">First Name</label>
+      <input type="text" name="first" class="form-control" id="inputEmail4" placeholder="First Name">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Last Name</label>
+      <input type="text" name="last" class="form-control" id="inputPassword4" placeholder="Last Name">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail5">User Name</label>
+      <input type="text" name="username" class="form-control" id="inputEmail5" placeholder="User Name">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail6">Password</label>
+      <input type="password"  name="pwd" class="form-control" id="inputEmail6" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Email</label>
+    <input type="email" name="mail" class="form-control" id="inputAddress" placeholder="john@exemple.com">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+  
+      <label for="inputCity">Mobile Num</label>
+      <input type="text" name="num" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">City</label>
+      <select id="inputState" name="choixCity" class="form-control">
+        <option selected>Choose...</option>
+        <option>Ariana</option>
+        <option>Ben Arous</option>
+        <option>Manouba</option>
+        <option>Tunis</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Gender</label>
+      <div class="form-check">
+  <input class="form-check-input" type="radio" name="gender" id="exampleRadios1" value="Male" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Male
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="gender" id="exampleRadios2" value="Female">
+  <label class="form-check-label" for="exampleRadios2">
+    Female
+  </label>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" name="agree" id="gridCheck">
+      <label class="form-check-label"  for="gridCheck">
+        I agree to the terms and policy
+      </label>
+    </div>
+  </div>
+  </div>
+ <div><button type="submit"  value="Sign Up" name="SignUp" class="btn btn-primary submit mb-10" style="background-color:#F25613">Sign up</button></div> 
+   <label for="inputCity">Already have an account?</label><a href="index1.php">
+			Login</a><a href="index1.php"> </a>
+</form>
+  </div>
+  </div>
+</div>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+   </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+  </html>
